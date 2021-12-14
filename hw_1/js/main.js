@@ -15,7 +15,7 @@ const headphonesPriceRounded = Math.floor(headphonesPrice);
 console.log(headphonesPriceRounded);
 const sumPriceRounded = tvPiceRounded + phonePriceRounded + headphonesPriceRounded;
 console.log(sumPriceRounded);
-const sumPriceRound = Math.ceil(sumPriceRounded / 100 ) * 100;
+const sumPriceRound = Math.ceil(sumPriceRounded / 100) * 100;
 console.log(sumPriceRound);
 const pairedUnpaired = Math.floor(sumPrice % 2) == 0;
 console.log(pairedUnpaired);
