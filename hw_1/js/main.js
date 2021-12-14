@@ -7,6 +7,18 @@ const minPrice = Math.min(tvPrice, phonePrice, headphonesPrice);
 console.log(minPrice);
 const sumPrice = tvPrice + phonePrice + headphonesPrice;
 console.log(sumPrice);
+const tvPiceRounded = Math.floor(tvPrice);
+console.log(tvPiceRounded);
+const phonePriceRounded = Math.floor(phonePrice);
+console.log(phonePriceRounded);
+const headphonesPriceRounded = Math.floor(headphonesPrice);
+console.log(headphonesPriceRounded);
+const sumPriceRounded = tvPiceRounded + phonePriceRounded + headphonesPriceRounded;
+console.log(sumPriceRounded);
+const sumPriceRound = Math.ceil(sumPriceRounded + 72);
+console.log(sumPriceRound);
+
+
 
 
 
