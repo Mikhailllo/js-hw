@@ -15,9 +15,21 @@ const headphonesPriceRounded = Math.floor(headphonesPrice);
 console.log(headphonesPriceRounded);
 const sumPriceRounded = tvPiceRounded + phonePriceRounded + headphonesPriceRounded;
 console.log(sumPriceRounded);
-const sumPriceRound = Math.ceil(sumPriceRounded + 72);
+const sumPriceRound = Math.round(sumPriceRounded + 72 ); //не знайшов як правильно округлити до 300//
 console.log(sumPriceRound);
-
+const pairedUnpaired = Math.floor(sumPrice) / 2;
+console.log(pairedUnpaired);
+const payment = 500;
+const restWholePrice = payment - sumPrice;
+console.log(restWholePrice);
+const averageTotalPrice = (sumPrice / 3).toFixed(2);
+console.log(averageTotalPrice);
+const discount = Math.random() * 100;
+console.log(discount)
+const DiscountSumPrice = (sumPrice - discount).toFixed(2);
+console.log(DiscountSumPrice);
+const profit = (sumPrice - discount) - (sumPrice / 2);
+console.log(profit);
 
 
 
