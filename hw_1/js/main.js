@@ -31,6 +31,24 @@ console.log(DiscountSumPrice);
 const profit = (sumPrice - discount) - (sumPrice / 2);
 console.log(profit);
 
+let container = document.querySelector("#container");
+container.innerHTML = `
+<p>Maximal price: ${maxPrice};</p>
+<p>Minimal price: ${minPrice};</p>
+<p>Total price of goods: ${sumPrice}</p>
+<p>Rounded TV price: ${tvPiceRounded}</p>
+<p>Rounded phone price: ${phonePriceRounded}</p>
+<p>Rounded headphones price: ${headphonesPriceRounded}</p>
+<p>Rounded all price to hundreds: ${sumPriceRound}</p>
+<p>These number are even!: ${pairedUnpaired}</p>
+<p>Change upon payment from 500$: ${restWholePrice}</p>
+<p>Average of total price: ${averageTotalPrice}</p>
+<p>Random discount: ${discount}</p>
+<p>Amount to pay with a discount: ${DiscountSumPrice}</p>
+<p>Profit: ${profit}</p>
+
+`;
+
 
 
 
