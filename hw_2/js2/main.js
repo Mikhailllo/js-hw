@@ -1,5 +1,7 @@
 const n = prompt("Insert the number");
-console.log( )
+console.log( n);
+if (12);
+else if (n === " ");
 
 
 
