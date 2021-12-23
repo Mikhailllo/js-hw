@@ -9,7 +9,7 @@ console.log(Number.isInteger(n));
 parseInt(m);
 console.log(Number.isInteger(m));
 let sum = 0;
-for ( let i = n; i <= m; i++) {
+for (let i = n; i <= m; i++) {
     if (!notEvenNumber || i % 2 === 1) {
         sum += i;
     }
