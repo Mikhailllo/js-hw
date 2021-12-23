@@ -1,12 +1,34 @@
 
-const n = prompt('N');
-console.log(n);
-const m = prompt('M');
-console.log(m);
-let sumNm = 0;
-for (let i = n; i <= m; i++) {
-    if (!NaN || i % 2 === 1) {
-        sumNm += i    
-    }
-}
-console.log(sumNm);
+// const startVolue = prompt('add Start Volue');
+// const endVolue = prompt("add end Volume");
+// const volue = confirm("пропускати парні числа");
+// const startVolueCell = startVolue = parent()
+const n = 5;
+const m = 10;
+parseInt(n);
+console.log(Number.isInteger(n));
+
+
+
+// if (volue) {
+
+//     const startEnd = startVolue + endVolue; {
+
+//     }
+//     console.log(startEnd);
+
+// } else {
+//     startEnd = i = 2; i <= 10; i++;
+//     console.log(startEnd);
+// }
+
+
+
+
+
+
+
+
+
+
+
