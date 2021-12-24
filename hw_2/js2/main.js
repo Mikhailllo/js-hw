@@ -31,11 +31,8 @@ else {
     console.log(sum);
         
     }
+
     
-
-
-
-
 
 
 
