@@ -29,6 +29,7 @@ else {
             sum = sum + i;
         }
     }
+    
     console.log(sum);
     
     
