@@ -1,5 +1,5 @@
-const n = 1;
-const m = 10;
+const n = 10;//prompt('n');
+const m = 100;//prompt('m');
 const value = confirm("пропускати парні числа");
 if (value) {
     const notEvenNumber = true;
@@ -31,7 +31,6 @@ else {
     }
 
     console.log(sum);
-    
     
     
     }
