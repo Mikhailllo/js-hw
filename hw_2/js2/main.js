@@ -11,6 +11,7 @@ if (value) {
     for (let i = n; i <= m; i++) {
         if (!notEvenNumber || i % 2 === 1) {
             sum = sum + i;
+    
         }
     }
     console.log(sum);
@@ -29,7 +30,8 @@ else {
         }
     }
     console.log(sum);
-        
+    
+    
     }
 
     
