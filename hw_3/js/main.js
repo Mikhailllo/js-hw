@@ -14,7 +14,7 @@
 // const floor = Math.floor(getMaxDigit(n))
 // console.log(floor);
 
-//<========завдання ДВА ======>// NOW
+//<========завдання ДВА ======>// NO
 
 
 
@@ -26,15 +26,14 @@
 // }
 // console.log(bigLetter(str));
 
-//<========завдання ЧОТИРИ ======>// NOW
+//<========завдання ЧОТИРИ ======>// YeS
 
-// const wages = 6500;
-//     const taxValue/100 - 19%  => {
-  
+// const salaruWithTax = (salary, tax) => (salary - (salary / 100 * tax));
 
-//     }
+// console.log(salaruWithTax(6500, 19) );
 
-//     console.log(taxValue(wages));
+
+
 
 //<========завдання П'ять ======>// YES
 
@@ -57,17 +56,42 @@
 
 // console.log(countLetter(str));
 
-// <========завдання СІМ ======>    NOW
+// <========завдання СІМ ======>    NO
 
-const quantity = (100);
-    const convertCurrency = (sum) => {
-        const usdQuan = quantity.addEventListener();
+// const convertCurrency = () =>  {
+//     const quantity = prompt("введи знак валюти $ або uah");
+//     if (quantity.includes('$')) {
+//          return quantity.replace(/['$']/g,'') * 25 ;
+        
+//     } else if (quantity.toLowerCase().includes('uah')){ 
+//         return quantity.replace('uah', '') / 25 ;
+        
+//     } else { 
+//         return "введи знак валюти";
+//     }
+    
+    
+// }
+// console.log(convertCurrency());
+    
 
-    }
-    console.log(convertCurrency()
+
+    // <========завдання ВІСІМ ======>    NO//
+// function getRandomPassword() {
+//     const codRom = 12345672;
+// return  Math.floor(Math.random()* codRom )
+// }        
+// console.log(getRandomPassword()); 
 
 
+// <========завдання дев'ять ======>    yas//
 
+// const deleteLetters = (string, letter) => string.replace(new RegExp(letter,"g"),'');
+
+// console.log(deleteLetters('blablabla','b'));
+
+// const replaceCharacter = (str) => newString = str.replace(/a/gi,'');
+// }
 //<========завдання 10 ======>// YES
 
 // const str = prompt("polindrom");
