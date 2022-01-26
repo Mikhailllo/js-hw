@@ -9,8 +9,83 @@
 </head>
 
 <body>
-    <script src="./js/main.js"></script>
+    <p>1.  отримує число та виводить найбільшу цифру</p>
+    <form id="get-max-digit-form" style="display: flex;flex-direction: column;">
+        <label for="get-max-digit">
+            <input type="number" id="get-max-digit">
+        </label>
+        <button type="submit" id="get-max-digit-submit" style="width: fit-content;" >submit</button>
+        <p id="get-max-digit-result" style="color: rgb(138, 209, 16);"></p>
+        <p id="get-max-digit-error" style="color: rgb(197, 33, 33);"></p>
+    </form>
 
+
+
+    <p> 3.   форматує ім'я, роблячи першу букву великою</p>
+    <form id="big-latter-form" style="display: flex;flex-direction: column;">
+        <label for="big-latter">
+            <input type="text" id="big-latter">
+        </label>
+        <button type="submit" id="big-latter-submit" style="width: fit-content;" >submit</button>
+        <p id="big-latter-result" style="color: rgb(138, 209, 16);"></p>
+        <p id="big-latter-error" style="color: rgb(197, 33, 33);"></p>
+    </form>
+
+
+    <p>4.   вираховує суму,що залишається після оплати</p>
+    <form id="salary-with-tax-form" style="display: flex;flex-direction: column;">
+        <label for="salary">
+            <input type="number" id="salary">
+        </label>
+        <label for="tax">
+            <input type="number" id="tax">
+        </label>
+        <button type="submit" id="salary-with-tax-submit" style="width: fit-content;" >submit</button>
+        <p id="salary-with-tax-result" style="color: rgb(138, 209, 16);"></p>
+        <p id="salary-with-tax-error" style="color: rgb(197, 33, 33);"></p>
+    </form>
+
+
+    <p>5.   повертає випадкове ціле число</p>
+    <form id="get-random-number-form" style="display: flex;flex-direction: column;">
+        <label for="number-m">
+            <input type="number" id="number-m">
+        </label>
+        <label for="number-n">
+            <input type="number" id="number-n">
+        </label>
+        <button type="submit" id="get-random-number-submit" style="width: fit-content;" >submit</button>
+        <p id="get-random-number-result" style="color: rgb(138, 209, 16);"></p>
+        <p id="get-random-number-error" style="color: rgb(197, 33, 33);"></p>
+    </form>
+
+
+    <p>6.   рахує скільки разів певна буква повторюється в слові(працює тільки буква а)</p>
+    <form id="count-letter-form" style="display: flex;flex-direction: column;">
+        <label for="count-letter">
+            <input type="text" id="count-letter">
+        </label>
+        <label for="letter">
+            <input type="text" id="letter">
+        </label>
+        <button type="submit" id="count-letter-submit" style="width: fit-content;" >submit</button>
+        <p id="count-letter-result" style="color: rgb(138, 209, 16);"></p>
+        <p id="count-letter-error" style="color: rgb(197, 33, 33);"></p>
+    </form>
+
+
+    <p>7.        конвертує долари в гривні та навпаки в залежності від наявності символа $ або UAH </p>
+    <form id="convert-currency-form" style="display: flex;flex-direction: column;">
+        <label for="convert-currency">
+            <input type="text" id="convert-currency">
+        </label>
+        <button type="submit" id="convert-currency-submit" style="width: fit-content;" >submit</button>
+        <p id="convert-currency-result" style="color: rgb(138, 209, 16);"></p>
+        <p id="convert-currency-error" style="color: rgb(197, 33, 33);"></p>
+    </form>
+
+
+    <script src="./js/main.js"></script>
 </body>
 
 </html>
