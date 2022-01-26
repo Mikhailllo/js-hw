@@ -19,6 +19,16 @@
         <p id="get-max-digit-error" style="color: rgb(197, 33, 33);"></p>
     </form>
 
+    <p>2.  визначає ступінь числа</p>
+    <form id="exponentiation-form" style="display: flex;flex-direction: column;">
+        <label for="exponentiation">
+            <input type="number" id="get-max-digit">
+        </label>
+        <button type="submit" id="exponentiation-submit" style="width: fit-content;" >submit</button>
+        <p id="exponentiation-result" style="color: rgb(138, 209, 16);"></p>
+        <p id="exponentiation-error" style="color: rgb(197, 33, 33);"></p>
+    </form>
+
 
 
     <p> 3.   форматує ім'я, роблячи першу букву великою</p>
@@ -77,12 +87,45 @@
     <p>7.        конвертує долари в гривні та навпаки в залежності від наявності символа $ або UAH </p>
     <form id="convert-currency-form" style="display: flex;flex-direction: column;">
         <label for="convert-currency">
-            <input type="text" id="convert-currency">
+            <input  id="convert-currency">
         </label>
         <button type="submit" id="convert-currency-submit" style="width: fit-content;" >submit</button>
         <p id="convert-currency-result" style="color: rgb(138, 209, 16);"></p>
         <p id="convert-currency-error" style="color: rgb(197, 33, 33);"></p>
     </form>
+
+    <p>8.    генерації випадкового паролю (тільки числа)</p>
+    <form id="set-random-password-form" style="display: flex;flex-direction: column;">
+        <label for="set-random-password">
+            <input type="password" id="set-random-password">
+        </label>
+        <button type="submit" id="get-random-password-submit" style="width: fit-content;" >submit</button>
+        <p id="set-random-password-result" style="color: rgb(138, 209, 16);"></p>
+        <p id="set-random-password-error" style="color: rgb(197, 33, 33);"></p>
+    </form>
+
+    <p>9.   видаляє любу букви з речення</p>
+    <form id="replace-сharacter-form" style="display: flex;flex-direction: column;">
+        <label for="replace-сharacter">
+            <input type="text" id="replace-сharacter">
+        </label>
+        <button type="submit" id="count-letter-submit" style="width: fit-content;" >submit</button>
+        <p id="replace-сharacter-result" style="color: rgb(138, 209, 16);"></p>
+        <p id="replace-сharacter-error" style="color: rgb(197, 33, 33);"></p>
+    </form>
+
+    <p>10.   перевіряє, чи є слово паліндромом.  </p>
+    <form id="is-palyndrom-form" style="display: flex;flex-direction: column;">
+        <label for="is-palyndrom">
+            <input type="text" id="is-palyndrom">
+        </label>
+        <button type="submit" id="is-palyndrom-submit" style="width: fit-content;" >submit</button>
+        <p id="is-palyndrom-result" style="color: rgb(138, 209, 16);"></p>
+        <p id="is-palyndrom-error" style="color: rgb(197, 33, 33);"></p>
+    </form>
+
+
+
 
 
     <script src="./js/main.js"></script>
