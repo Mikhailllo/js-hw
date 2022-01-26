@@ -119,7 +119,7 @@ const countLetter = (str, letter) => {
 const convertCurrencyForm = document.getElementById("convert-currency-form");
 const convertCurrencyResult = document.getElementById("convert-currency-result");
 const convertCurrencyError = document.getElementById("convert-currency-error");
-getMaxDigitForm.addEventListener("submit", (event) => {
+convertCurrencyForm.addEventListener("submit", (event) => {
     event.preventDefault();
     const quantity = event.target[0].value;
     convertCurrencyResult.innerHTML = '';
@@ -127,13 +127,13 @@ getMaxDigitForm.addEventListener("submit", (event) => {
     convertCurrencyResult.innerHTML = convertCurrency(quantity);
 });
 
-const convertCurrency = () => {
+const convertCurrency = (quantity) => {
     // const quantity = prompt("введи знак валюти $ або uah");
     if (quantity.includes('$')) {
-        return quantity.replace(/['$']/g, '') * 25;
+        return quantity.replace(/['$']/g, '') * 29;
 
     } else if (quantity.toLowerCase().includes('uah')) {
-        return quantity.replace('uah', '') / 25;
+        return quantity.replace('uah', '') / 29;
 
     } else {
         return "введи знак валюти";
