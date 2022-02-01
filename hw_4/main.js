@@ -29,7 +29,7 @@ console.log(themesCouple(areCouple,are2));
 const studentMarks = (are1,are3) => {
     const marksStudents = [];
 for(let = i= 0; i < are1.length; i++){
-    marksStudents.push([are1[i],are3[i]]);
+    marksStudents.push(...[are1[i],are3[i]]);
 }
     return marksStudents
 }
