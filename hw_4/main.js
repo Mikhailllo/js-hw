@@ -29,7 +29,7 @@ console.log(themesCouple(areCouple,are2));
 const studentMarks = (are1,are3) => {
     const marksStudents = [];
 for(let = i= 0; i < are1.length; i++){
-    marksStudents.push(...[are1[i],are3[i]]);
+    marksStudents.push([are1[i],are3[i]]);
 }
     return marksStudents
 }
@@ -40,7 +40,7 @@ console.log(studentMarks(are1,are3));
 const marksRandom = () => Math.round(Math.random() * (5 - 1) + 1);
 
 const marksCoupleRandom = () => {
-    const coupleThem = themesCouple(areCouple,are2)
+    const coupleThem =[...themesCouple(areCouple,are2)]
     const coupleRandomMarks = [];
 for(let = i = 0; i < coupleThem.length; i++){
     coupleRandomMarks.push([coupleThem[i],marksRandom()]);
