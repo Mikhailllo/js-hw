@@ -5,10 +5,6 @@ const marks = '4, 5, 5, 3, 4, 5';
 const are1 = students.split(",",);
 const are2 = themes.split(",");
 const are3 = marks.split(",",);
-// #1.1
-// are1.forEach((name, index, arr) => {
-//     document.writeln(`${index + 2} ${name} i ${arr[index + 2]} <br>`);
-// });
 
 //  #1
 const are = [];
@@ -28,7 +24,7 @@ console.log(themesCouple(areCouple,are2));
 //  #3
 const studentMarks = (are1,are3) => {
     const marksStudents = [];
-for(let = i= 0; i < are1.length; i++){
+for(let  i= 0; i < are1.length; i++){
     marksStudents.push([are1[i],are3[i]]);
 }
     return marksStudents
@@ -42,7 +38,7 @@ const marksRandom = () => Math.round(Math.random() * (5 - 1) + 1);
 const marksCoupleRandom = () => {
     const coupleThem =[...themesCouple(areCouple,are2)]
     const coupleRandomMarks = [];
-for(let = i = 0; i < coupleThem.length; i++){
+for(let  i = 0; i < coupleThem.length; i++){
     coupleRandomMarks.push([coupleThem[i],marksRandom()]);
 } 
     return coupleRandomMarks

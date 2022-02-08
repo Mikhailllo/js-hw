@@ -51,3 +51,8 @@ const str = 'Are you fucking kidding?';
 const arr1 = str.split([" "]);
 const replaceBadWords = () => arr1.join((" "));
 console.log(replaceBadWords().replace('fuck','****') )
+
+// №9
+const word = ['conductor'] ;
+const sliceWord = word.slice(' ',length)
+
