@@ -53,6 +53,8 @@ const replaceBadWords = () => arr1.join((" "));
 console.log(replaceBadWords().replace('fuck','****') )
 
 // №9
-const word = ['conductor'] ;
-const sliceWord = word.slice(' ',length)
+const word = ['Commander'];
 
+const divideByThree = () => word.reduce((acc,el,i) => acc[0].length < 3 + el[i],0);
+
+console.log(divideByThree())

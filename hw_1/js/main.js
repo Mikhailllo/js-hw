@@ -35,7 +35,7 @@ let container = document.querySelector("#container");
 container.innerHTML = `
 <p>tv Price:  ${tvPrice}</p>
 <p>Price phone ${phonePrice}</p>
-<p>headphones Price ${phonePrice}</p>
+<p>headphones Price ${headphonesPrice}</p>
 <p>Maximal price: ${maxPrice};</p>
 <p>Minimal price: ${minPrice};</p>
 <p>Total price of goods: ${sumPrice}</p>
