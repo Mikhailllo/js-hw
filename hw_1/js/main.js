@@ -15,7 +15,7 @@ const headphonesPriceRounded = Math.floor(headphonesPrice);
 console.log(headphonesPriceRounded);
 const sumPriceRounded = tvPiceRounded + phonePriceRounded + headphonesPriceRounded;
 console.log(sumPriceRounded);
-const sumPriceRound = Math.ceil(sumPriceRounded / 100) * 100;
+const sumPriceRound = Math.round(sumPriceRounded / 100) * 100;
 console.log(sumPriceRound);
 const pairedUnpaired = Math.floor(sumPriceRounded % 2) == 0;
 console.log(pairedUnpaired);
@@ -33,6 +33,9 @@ console.log(profit);
 
 let container = document.querySelector("#container");
 container.innerHTML = `
+<p>tv Price:  ${tvPrice}</p>
+<p>Price phone ${phonePrice}</p>
+<p>headphones Price ${phonePrice}</p>
 <p>Maximal price: ${maxPrice};</p>
 <p>Minimal price: ${minPrice};</p>
 <p>Total price of goods: ${sumPrice}</p>
