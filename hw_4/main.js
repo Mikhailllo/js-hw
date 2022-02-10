@@ -14,7 +14,7 @@ console.log(areCouple);
 // #2
 const themesCouple = (areCouple ,are2) => {
     const areCoupleThem = [];
-for(let = i = 0; i < areCouple.length ; i++){
+for(let i = 0; i < areCouple.length ; i++){
     areCoupleThem.push([areCouple[i].join(' i '), are2[i]]);
 }
     return areCoupleThem

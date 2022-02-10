@@ -9,14 +9,6 @@ return arrNumbers
 }
 console.log(getRandomArray())
 
-//# 1.1
-// const randomNumb = () => Math.round(Math.random() * (50 - 5) + 1);
-// const arrNumbers = [ 0 ];
-// const getRandomArray = () => arrNumbers.reduce((acc,el).Math.random() * (50 - 5) + 1 );
-// return el = 0 ; el < 15; el++
-// console.log(getRandomArray())
-
-
 //  #3
 const numbers = [6, 2, 55, 11, 78, 2, 55, 77, 57, 87, 23, 2, 56, 3, 2, 1.5,2.5];
 const items = numbers.length;
@@ -24,13 +16,6 @@ let notIntegerLength =  0;
 const integerArr = numbers.filter(num => Number.isInteger(num) )
 const middle = integerArr.reduce((acc,el) => acc + el);
 console.log(middle / integerArr.length)
-//     //if  (Number.isInteger(el)) {
-//         return acc + el  
-//     //} else {
-//     //    return acc
-//     }
-// } )
-// console.log(middle / (items - notIntegerLength))  ;
 
 //  #5
 const numbersRow = [4,5,7,,9,8,96,55,54,63,40,45,67,890];
@@ -53,8 +38,8 @@ const replaceBadWords = () => arr1.join((" "));
 console.log(replaceBadWords().replace('fuck','****') )
 
 // №9
-const word = ['Commander'];
+// const word = ['Commander'];
 
-const divideByThree = () => word.reduce((acc,el,i) => acc[0].length < 3 + el[i],0);
+// const divideByThree = () => word.reduce((acc,el,i) => acc[0].length < 3 + el[i],0);
 
-console.log(divideByThree())
+// console.log(divideByThree())
