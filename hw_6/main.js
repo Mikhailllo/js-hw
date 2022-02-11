@@ -24,3 +24,12 @@ const students = [{
     }
     
 }];
+
+//  #1
+const getSubjects = (student) => {
+    const subjectStud = Object.keys(student.subjects);
+    const result = subjectStud.map(i => i.charAt(0).toUpperCase() + i.substr(1).replace(/_/gi," "));
+    return result
+}
+console.log(getSubjects(students[0]))
+
