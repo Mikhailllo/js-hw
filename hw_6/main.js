@@ -33,3 +33,37 @@ const getSubjects = (student) => {
 }
 console.log(getSubjects(students[0]))
 
+// #2
+const getAverageMark = (student) => {
+    const allMarksForStudent = Object.values(student.subjects).flat(1)
+    const sum = allMarksForStudent.reduce((total,i) => total +=i)
+    const marksNum = allMarksForStudent.reduce(total => total +=1, 0)
+    return (sum/marksNum).toFixed(2)
+}
+console.log(getAverageMark(students[0]))
+
+// #3
+const getStudentsInfo = (student) => {
+	return {
+        name: student.name,
+		course: student.course,
+		averageMark: getAverageMark(student),
+	};
+};
+console.log(getStudentsInfo(students[0]));
+
+// #4
+const getStudNames = (students) => {
+    const studentsNames = students.map((student) => student.name)
+    return studentsNames.sort()
+};
+console.log(getStudNames(students));
+
+//  #5
+const getBestStudent = (students) => {
+	const averageRating = students.map((student) => Number(getAverageMark(student)));
+	return students[averageRating.indexOf(Math.max(...averageRating))].name;
+};
+console.log(getBestStudent(students));
+
+// #6
