@@ -42,3 +42,9 @@ getTotalTaxes.call(ukraine);
 });
 
 // #4
+const salary = (Math.round(Math.random() * (2000 - 1500) + 1500));
+function getMySalary() {
+    const profit = salary - this.tax ; 
+    return profit
+};
+setInterval(() => (console.log(getMySalary.call(ukraine))), 10000);
