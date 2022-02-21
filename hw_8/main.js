@@ -41,4 +41,4 @@ console.log(student1.marks);
 student1.dismiss ;
 console.log('Task # 6:',student1.marks);
 student1.recover = [5, 4, 4, 5];;
-console.log('Task # 6:',student1.marks);
+console.log('Task # 7:',student1.marks);
