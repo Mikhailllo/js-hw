@@ -6,7 +6,7 @@ class Student {
         this.marks = marks;
     }
     getInfo() {
-        return ' Student ' + this.course + ' of ' + this.university + ' University, ' + this.fullName;
+        return 'Student' + this.course + ' of ' + this.university + ' University, ' + this.fullName;
     }
     get estimates() {
         return this.marks
@@ -16,18 +16,17 @@ class Student {
     }
     getAverageMark() {
         const averageMark = this.marks.flat().reduce((total, i) => total + i);
-        return averageMark / this.marks.flat().length
+        return averageMark / this.marks.flat().length;
     }
     get dismiss() {
         this.marks = null;
+        return console.log('Task # 6:','Student excluded!!!', student1.marks);
     }
     get recover() {
-        return this.marks
+        student1.marks = [5, 5, 4, 5];
+        return console.log('Task # 7:','Student renewal', student1.marks);        
     }
-    
-
 }
-
 const student1 = new Student("Harvard", "course 4", "Barack Hussein Obama");
 const student2 = new Student("Stanford", "course 4", "Sergei Mikhailovich Brin");
 const student3 = new Student("Berkeley", "course 3", "John Charles Fields");
@@ -35,20 +34,17 @@ console.log('Task # 2:', student2.getInfo());
 student1.marks = [5, 5, 4, 5];
 student2.marks = [5, 4, 4, 5];
 student3.marks = [5, 4, 5, 5];
+
 console.log('Task # 3:', student1.estimates);
 student1.estimates = 5;
 console.log('Task # 4:', student1.marks);
 console.log('Task # 5:', student1.getAverageMark());
 student1.dismiss;
-console.log('Task # 6:', student1.marks);
 student1.recover;
-console.log('Task # 7:', student1.marks);
-
 class BudgetStudent extends Student {
     constructor (scholarship,university, course, fullName, marks){
         super (university, course, fullName, marks);
-        this.scholarship = scholarship;
-        
+        this.scholarship = scholarship;    
         {
             setInterval(() => ( this.getScholarship()),10000);
         }
@@ -63,10 +59,15 @@ class BudgetStudent extends Student {
             return console.log('Advanced # 2:'+' Student ' + this.fullName + ' You got it ' + this.scholarship + '$ Scholarship ') ;
         }
     }
-
+    excludeStudent() {
+        this.marks = null;
+        this.scholarship = null;
+        return console.log('Advanced # 5:'+ " Student excluded ",budgetStudent);
+    }
 }
 const budgetStudent = new BudgetStudent(" ","Harvard", "course 4", "Barack Hussein Obama"," ");
 budgetStudent.marks = [2, 4, 4, 5];
 budgetStudent.scholarship = 1400;
 budgetStudent.getMarksScholarship();
+budgetStudent.excludeStudent();
 
