@@ -1,0 +1,20 @@
+.bord {
+    height: 100%;
+    width: 100%;
+    background-size: cover;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+.buttonMixer {
+    padding-bottom: 135px;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    gap: 75px;
+}
+
+.text {
+pointer-events: none;
+}
