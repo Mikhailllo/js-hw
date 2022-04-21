@@ -1,6 +1,5 @@
 const buttonNodeList = document.querySelectorAll(".btn");
 const btncont = document.querySelector(".buttonMixer");
-
 const soundArr = ["bumboks", "kolaba", "rave", "rusya"];
 const letterArray = ["A", "S", "D", "F",];
 const soundArray = soundArr.map((item, index) => {
@@ -15,7 +14,6 @@ document.addEventListener("keydown", (event) => {
         (item) => event.code === item.attributes.code.value && item.play()
     );
 });
-
 btncont.addEventListener("click", (event) => {
     console.trace();
     soundArray.forEach((item) => event.target.id === item.id && item.play());
