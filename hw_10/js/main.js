@@ -1,7 +1,7 @@
 const buttonNodeList = document.querySelectorAll(".btn");
 const btncont = document.querySelector(".buttonMixer");
-const soundArr = ["bumboks", "kolaba", "rave", "rusya"];
-const letterArray = ["A", "S", "D", "F",];
+const soundArr = ["bumboks", "kolaba", "rave", "rusya","coolegio","probass","verka","vidbiy","vova","zsu"];
+const letterArray = ["A", "S", "D", "F","G","H","J","k"];
 const soundArray = soundArr.map((item, index) => {
     const sound = new Audio(`./sound/sounds_${item}.mp3`);
     sound.setAttribute("id", `btn-${index + 1}`);
